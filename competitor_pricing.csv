@@ -1,0 +1,8 @@
+brand,product,segment,price_gbp,fabric_type,weight_g,upf_rating,country_of_manufacture,insect_repellent_treatment,construction_type
+Mozzie Cozzie,Jumpsuit Bundle,sustainable_niche,576,TENCEL,900,,UK,none,air_gap_design
+Craghoppers,NosiLife Pro Shirt,performance_niche,50,Recycled polyester blend,255,50,China,permethrin,
+Craghoppers,NosiLife Adventure Shirt,performance_niche,85,Recycled nylon,215,50,China,permethrin_biobased,
+Uniqlo,AIRism UV Cut Shirt,mass_market,25,Recycled polyester blend,140,,China,none,
+Regatta,Anti-Insect Travel Light Shirt,mass_market,60,Recycled polyester blend,125,50,Bangladesh,permethrin_biobased,
+Rohan,Atlas Short Sleeve T-Shirt,performance_niche,30,Polyester blend,170,40,,none,
+Páramo,Katmai Shirt,sustainable_niche,100,Polyester,200,50,,none,dense_weave
