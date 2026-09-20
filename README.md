@@ -1,8 +1,8 @@
 # Mozzie Cozzie Pricing Model
 
-Independent project looking at pricing strategy in the UK sustainable/technical outdoor clothing market, using Mozzie Cozzie as the focal brand.
+Pricing strategy analysis conducted during my Strategy Development internship at Mozzie Cozzie, looking at the UK sustainable/technical outdoor clothing market with Mozzie Cozzie as the focal brand.
 
-The idea came from wanting to understand how a brand's pricing looks once you account for what it actually costs to make the product, not just the sticker price. Competitors obviously don't publish their real cost structures, so I built a "cost bridge" that works backwards from fabric type, labour cost by manufacturing country, and treatment or construction complexity, to estimate what a garment's implied margin might be.
+The brief was to understand how Mozzie Cozzie's pricing looks once you account for what it actually costs to make the product, not just the sticker price. Competitors don't publish their real cost structures, so I built a "cost bridge" that works backwards from fabric type, labour cost by manufacturing country, and treatment or construction complexity, to estimate what a garment's implied margin might be.
 
 The data folder has pricing and specs for 7 competitors, all gathered from their own product pages. The scripts folder has the actual model: cost_bridge.py does the cost estimation, pricing_analysis.py runs the full analysis and produces the charts and tables, which land in the outputs folder. research_log.md has notes on where every number came from and where I had to estimate instead.
 
