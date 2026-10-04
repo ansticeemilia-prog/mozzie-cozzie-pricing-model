@@ -52,6 +52,8 @@ CONSTRUCTION_COMPLEXITY_COST = {
     "dense_weave": 2.50,      # Páramo's dense-weave fabric — less construction complexity than Air-Gap, estimate
 }
 
+BUNDLE_EXTRAS_COST = 22.00  # estimated combined cost of hood, mask and travel bag included in Mozzie Cozzie's bundle — not itemised by the brand, reasoned estimate
+
 OVERHEAD_FLAT = 4.00  # packaging, logistics, QA allowance per unit
 
 
@@ -67,9 +69,10 @@ def compute_cost_bridge(df: pd.DataFrame) -> pd.DataFrame:
     df["treatment_cost"] = df["insect_repellent_treatment"].map(TREATMENT_COST).fillna(0.00)
     df["overhead_cost"] = OVERHEAD_FLAT
     df["construction_cost"] = df["construction_type"].map(CONSTRUCTION_COMPLEXITY_COST).fillna(0.00)
+    df["bundle_extras_cost"] = df["product"].apply(lambda p: BUNDLE_EXTRAS_COST if p == "Jumpsuit Bundle" else 0.00)
 
     df["estimated_unit_cost"] = (
-        df["fabric_cost"] + df["labour_cost"] + df["treatment_cost"] + df["overhead_cost"] + df["construction_cost"]
+        df["fabric_cost"] + df["labour_cost"] + df["treatment_cost"] + df["overhead_cost"] + df["construction_cost"] + df["bundle_extras_cost"]
     )
 
     df["implied_margin_pct"] = (
